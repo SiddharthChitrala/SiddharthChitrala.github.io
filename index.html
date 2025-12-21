@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Siddharth Kumar Chitrala - Software Engineer</title>
+    <title>Sai Siddharth Kumar Chitrala - Software Engineer Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -33,7 +33,6 @@
             padding: 0 20px;
         }
 
-        /* Header & Navigation */
         header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
@@ -73,7 +72,6 @@
             opacity: 0.8;
         }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
@@ -96,9 +94,19 @@
 
         .hero p {
             font-size: 1.1rem;
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto 2rem;
             opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        .hero .location {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            opacity: 0.95;
         }
 
         .btn {
@@ -124,7 +132,6 @@
             border: 2px solid white;
         }
 
-        /* Section Styles */
         section {
             padding: 80px 0;
         }
@@ -149,7 +156,6 @@
             border-radius: 2px;
         }
 
-        /* About Section */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -199,7 +205,6 @@
             margin-top: 0.5rem;
         }
 
-        /* Skills Section */
         #skills {
             background: white;
         }
@@ -244,7 +249,6 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
-        /* Projects Section */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -289,6 +293,7 @@
             flex-wrap: wrap;
             gap: 0.5rem;
             margin-top: 1rem;
+            margin-bottom: 1rem;
         }
 
         .tech-badge {
@@ -300,7 +305,35 @@
             font-weight: 500;
         }
 
-        /* Experience Section */
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 8px 16px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .project-link:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .project-link.demo {
+            background: var(--accent);
+        }
+
         #experience {
             background: white;
         }
@@ -365,7 +398,6 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Certifications Section */
         .cert-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -396,7 +428,6 @@
             opacity: 0.8;
         }
 
-        /* Contact Section */
         #contact {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
@@ -443,7 +474,6 @@
             transform: scale(1.1);
         }
 
-        /* Footer */
         footer {
             background: var(--dark);
             color: white;
@@ -451,7 +481,6 @@
             padding: 2rem 0;
         }
 
-        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -463,7 +492,6 @@
             }
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -505,7 +533,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <header>
         <nav class="container">
             <div class="logo">SSK Chitrala</div>
@@ -514,17 +541,18 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1>Sai Siddharth Kumar Chitrala</h1>
-            <p class="subtitle">Software Engineer | Full-Stack Developer | Cloud Enthusiast</p>
-            <p>Building scalable, high-performance applications with modern technologies. Passionate about solving complex problems and creating impactful solutions.</p>
+            <p class="subtitle">Software Engineer | Full-Stack Developer | AI/ML Enthusiast</p>
+            <p class="location">📍 Hyderabad, Telangana, India</p>
+            <p>Results-driven Software Engineer with 2+ years of experience building scalable, high-performance applications using Java, Flutter, and modern full-stack technologies. Specialized in microservices architecture, RESTful APIs, machine learning integration, and cloud-native solutions. Passionate about solving complex problems and delivering impactful business solutions.</p>
             <div>
                 <a href="#contact" class="btn">Get In Touch</a>
                 <a href="#projects" class="btn btn-secondary">View Projects</a>
@@ -532,7 +560,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -540,8 +567,8 @@
                 <div class="about-text">
                     <h3>Hi, I'm Siddharth!</h3>
                     <p>Results-driven Software Engineer with 2+ years of experience building scalable, high-performance applications using Java, Flutter, and modern full-stack technologies.</p>
-                    <p>I specialize in backend development with Java and Spring Boot, mobile development with Flutter, and full-stack applications using MEAN/MERN stacks. I'm experienced in cloud technologies, containerization, and building AI-powered solutions.</p>
-                    <p>Currently based in Hyderabad and open to exciting opportunities where I can contribute to innovative projects and continue growing as a developer.</p>
+                    <p>I specialize in backend development with Java and Spring Boot, mobile development with Flutter, full-stack applications using MEAN/MERN stacks, and AI/ML integration. My expertise spans microservices architecture, RESTful APIs, cloud technologies (AWS, IBM Cloud), containerization with Docker and Kubernetes, and data analytics with Tableau and Power BI.</p>
+                    <p>I'm passionate about clean architecture, Agile methodologies, and building solutions that make a real business impact. Currently based in Hyderabad and open to exciting opportunities where I can contribute to innovative projects and continue growing as a developer.</p>
                 </div>
                 <div class="stats">
                     <div class="stat-card">
@@ -561,13 +588,12 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Languages</h3>
+                    <h3>Programming Languages</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">Python</span>
@@ -577,14 +603,24 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Frameworks</h3>
+                    <h3>Frontend Technologies</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">Flutter</span>
                         <span class="skill-tag">React.js</span>
                         <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Boot</span>
                         <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Java JAX-RS</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -594,24 +630,61 @@
                         <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">PostgreSQL</span>
                         <span class="skill-tag">IBM Db2</span>
+                        <span class="skill-tag">Firebase</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Cloud & DevOps</h3>
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">IBM Cloud</span>
+                        <span class="skill-tag">Cloud Object Storage</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">IBM Cloud</span>
-                        <span class="skill-tag">CI/CD</span>
                         <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>API Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">JWT Authentication</span>
+                        <span class="skill-tag">Microservices</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Analytics & ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">TF-IDF</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Testing & Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JUnit</span>
+                        <span class="skill-tag">Mockito</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">Clean Architecture</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
@@ -630,6 +703,11 @@
                             <span class="tech-badge">FAISS</span>
                             <span class="tech-badge">RAG</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SiddharthChitrala" target="_blank" class="project-link">
+                                <span>💻</span> View Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -646,6 +724,11 @@
                             <span class="tech-badge">JWT</span>
                             <span class="tech-badge">REST API</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SiddharthChitrala" target="_blank" class="project-link">
+                                <span>💻</span> View Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -661,6 +744,11 @@
                             <span class="tech-badge">Flask</span>
                             <span class="tech-badge">TensorFlow</span>
                             <span class="tech-badge">Machine Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SiddharthChitrala" target="_blank" class="project-link">
+                                <span>💻</span> View Code
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -679,6 +767,11 @@
                             <span class="tech-badge">IBM Db2</span>
                             <span class="tech-badge">IBM Cloud</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SiddharthChitrala" target="_blank" class="project-link">
+                                <span>💻</span> View Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -694,6 +787,11 @@
                             <span class="tech-badge">Express.js</span>
                             <span class="tech-badge">Node.js</span>
                             <span class="tech-badge">WebRTC</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SiddharthChitrala" target="_blank" class="project-link">
+                                <span>💻</span> View Code
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -711,6 +809,11 @@
                             <span class="tech-badge">Node.js</span>
                             <span class="tech-badge">Geolocation API</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SiddharthChitrala" target="_blank" class="project-link">
+                                <span>💻</span> View Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -725,6 +828,11 @@
                             <span class="tech-badge">MySQL</span>
                             <span class="tech-badge">Excel</span>
                             <span class="tech-badge">Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SiddharthChitrala" target="_blank" class="project-link">
+                                <span>💻</span> View Code
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -742,13 +850,17 @@
                             <span class="tech-badge">Excel</span>
                             <span class="tech-badge">Data Visualization</span>
                         </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SiddharthChitrala" target="_blank" class="project-link">
+                                <span>💻</span> View Code
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <div class="container">
             <h2 class="section-title">Work Experience</h2>
@@ -756,13 +868,14 @@
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Flutter & Java Developer</h3>
-                        <div class="company">BlockForTrust Pvt Ltd.</div>
+                        <div class="company">BlockForTrust Pvt Ltd., Hyderabad</div>
                         <div class="date">August 2024 - June 2025</div>
                         <ul>
-                            <li>Architected AI-powered defect detection system processing 1000+ images</li>
-                            <li>Built ERP platform handling 500+ monthly transactions with 99.9% accuracy</li>
-                            <li>Optimized MongoDB performance by 40% through strategic indexing</li>
-                            <li>Achieved 95% code coverage through comprehensive testing</li>
+                            <li>Architected AI-powered building defect detection system integrating Python ML model with Flask backend and Flutter frontend, reducing manual inspection time by 60% while processing 1000+ images with 95% accuracy</li>
+                            <li>Engineered comprehensive real estate management platform using Java JAX-RS and Flutter to streamline user management, site administration, purchase orders, and automated invoice generation, handling 500+ monthly transactions with 99.9% accuracy</li>
+                            <li>Built automated PDF invoice generation system with dynamic templates, decreasing manual billing time by 70%</li>
+                            <li>Enhanced MongoDB database performance by 40% through strategic indexing, query optimization, and schema redesign across multiple collections</li>
+                            <li>Established secure RESTful APIs with JWT authentication in microservices architecture, maintaining 95% code coverage through comprehensive unit testing with JUnit and Mockito</li>
                         </ul>
                     </div>
                 </div>
@@ -770,13 +883,14 @@
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Software Developer Intern</h3>
-                        <div class="company">SmartInternz</div>
+                        <div class="company">SmartInternz, Hyderabad</div>
                         <div class="date">December 2022 - June 2024</div>
                         <ul>
-                            <li>Engineered 8+ full-stack applications using MEAN/MERN stacks</li>
-                            <li>Deployed containerized apps on Kubernetes, reducing deployment time by 50%</li>
-                            <li>Mentored 200+ students on cloud technologies and full-stack development</li>
-                            <li>Implemented CI/CD pipelines, reducing production bugs by 35%</li>
+                            <li>Engineered 8+ production-grade full-stack web applications utilizing MEAN/MERN stacks with MongoDB and RESTful APIs</li>
+                            <li>Constructed data-driven analytical dashboards using Tableau and MySQL, generating business insights with 90% accuracy</li>
+                            <li>Containerized applications and deployed in Kubernetes clusters on IBM Cloud, reducing deployment time by 50% and improving scalability</li>
+                            <li>Mentored 200+ students at KL University, Anurag College, and GITAM on IBM Cloud, Docker, Kubernetes, and full-stack development</li>
+                            <li>Established CI/CD pipelines using Git and automated testing, reducing production bugs by 35%</li>
                         </ul>
                     </div>
                 </div>
@@ -784,10 +898,9 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
     <section id="certifications">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <h2 class="section-title">Certifications & Achievements</h2>
             <div class="cert-grid">
                 <div class="cert-card">
                     <h4>DSA with Java Bootcamp</h4>
@@ -821,19 +934,25 @@
                     <h4>Data Tableau Workshop</h4>
                     <p class="issuer">Jobaaj.com - 2024</p>
                 </div>
+                <div class="cert-card">
+                    <h4>🏆 Shield of Recognition</h4>
+                    <p class="issuer">SmartInternz - Outstanding mentorship and technical training contributions</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <p>I'm currently open to new opportunities and exciting projects. Let's connect!</p>
                 <div class="contact-links">
-                    <a href="mailto:siddharthchitrala4@gmail.com" class="contact-link">
+                    <a href="mailto:chitrala.saisiddharthkumar7@gmail.com" class="contact-link">
                         <span>📧</span> Email Me
+                    </a>
+                    <a href="tel:+919441730912" class="contact-link">
+                        <span>📱</span> +91 9441730912
                     </a>
                     <a href="https://www.linkedin.com/in/sai-siddharth-kumar-chitrala" target="_blank" class="contact-link">
                         <span>💼</span> LinkedIn
@@ -841,7 +960,7 @@
                     <a href="https://github.com/SiddharthChitrala" target="_blank" class="contact-link">
                         <span>💻</span> GitHub
                     </a>
-                     <a href="https://leetcode.com/u/C_Sai_Siddharth_Kumar/" target="_blank" class="contact-link">
+                    <a href="https://leetcode.com/u/C_Sai_Siddharth_Kumar/" target="_blank" class="contact-link">
                         <span>🔧</span> LeetCode
                     </a>
                 </div>
@@ -849,7 +968,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Sai Siddharth Kumar Chitrala. Built with passion and code.</p>
@@ -857,7 +975,6 @@
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -871,7 +988,6 @@
             });
         });
 
-        // Add animation on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
